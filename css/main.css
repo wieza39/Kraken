@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  background: #191b19;
+}
+
+nav {
+  text-transform: uppercase;
+}
+nav .nav-link,
+nav .fa-bars {
+  color: #cad2c5;
+}
+nav .active {
+  color: #45a03b !important;
+}
+nav .nav-link:hover {
+  color: #96e78d;
+}
+nav .fa-brands {
+  color: #45a03b;
+  font-size: xx-large;
+}
+nav .fa-brands:hover {
+  color: #d12522;
+}
+nav .fa-bars {
+  padding: 10px;
+}
+nav .navbar-toggler {
+  border: 0;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}/*# sourceMappingURL=main.css.map */

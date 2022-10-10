@@ -1,0 +1,53 @@
+@import "color";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: "Lato", sans-serif;
+	background: $black;
+}
+
+nav {
+	text-transform: uppercase;
+
+	.nav-link,
+	.fa-bars {
+		color: $gray;
+	}
+
+	.active {
+		//Used important, because it didn't overwrite otherwise
+		color: $green !important;
+	}
+
+	.nav-link:hover {
+		color: $light-green;
+	}
+
+	.fa-brands {
+		color: $green;
+		font-size: xx-large;
+	}
+
+	.fa-brands:hover {
+		color: $red;
+	}
+
+	.fa-bars {
+		padding: 10px;
+	}
+
+	.navbar-toggler {
+		border: 0;
+	}
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
+}
