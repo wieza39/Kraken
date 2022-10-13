@@ -1,24 +1,9 @@
-const sizeUp = document.querySelector('.size-up')
-const sizeDown = document.querySelector('.size-down')
-const color = document.querySelector('.color')
-const p = document.querySelector('p')
+const menuBurger = document.querySelector(".fa-bars");
+const menuShadow = document.querySelector(".navbar-shadow");
 
-let fontSize = 20;
-
-function increaseText() {
-    fontSize+=5
-    p.style.fontSize = fontSize + 'px'
+//poprawic funkcje, zeby wracalo do piewotnej postaci + sprawdzic na iPadzie
+function addMenuShadow() {
+	menuShadow.style.height = "1200px";
 }
 
-function decreaseText() {
-    fontSize-=5
-    p.style.fontSize = fontSize + 'px'
-}
-
-function colorChange() {
-    p.style.color = 'gold'
-}
-
-sizeUp.addEventListener('click', increaseText)
-sizeDown.addEventListener('click', decreaseText)
-color.addEventListener('click', colorChange)
+menuBurger.addEventListener("click", addMenuShadow);

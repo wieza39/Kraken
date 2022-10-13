@@ -7,40 +7,57 @@
   <title>Web2proj</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="https://kit.fontawesome.com/3901cf777d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/3901cf777d.js" crossorigin="anonymous"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
-  <nav id="navbar"class="navbar navbar-expand-lg position-sticky top-0">
+  <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0">
+    <div class="navbar-shadow"></div>
     <div class="container">
       <a class="navbar-brand" href="#"><i class="fa-brands fa-gitkraken"></i></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
           <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="#about">o nas</a>
-          <a class="nav-link" href="#products">produkty</a>
-          <a class="nav-link" href="#prices">cennik</a>
-          <a class="nav-link" href="#other">inne</a>
-          <a class="nav-link" href="#projects">projekty</a>
-          <a class="nav-link" href="#contact">kontakt</a>
+          <a class="nav-link" href="#about">about us</a>
+          <a class="nav-link" href="#products">products</a>
+          <a class="nav-link" href="#prices">pricelist</a>
+          <a class="nav-link" href="#other">other</a>
+          <a class="nav-link" href="#projects">projects</a>
+          <a class="nav-link" href="#contact">contact</a>
         </div>
       </div>
     </div>
   </nav>
-  <div id="prices" style="height: 100vh; background-color: rgb(66, 66, 66);"></div>
-  <div id="other" style="height: 100vh; background-color: rgb(29, 17, 2);"></div>
+
+  <header class="hero">
+    <div class="hero_background">
+      <div class="hero_shadow"></div>
+      <div class="hero_header">
+        <h1>some welcome header</h1>
+        <p>some text below</p>
+      </div>
+      <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+  </header>
+
+  <div id="about" style="height: 100vh; background-color: rgb(66, 66, 66);"></div>
+  <div id="products" style="height: 100vh; background-color: rgb(29, 17, 2);"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
   </script>
+  <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>
